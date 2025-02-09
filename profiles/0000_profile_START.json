@@ -1,0 +1,67 @@
+{
+    "name": "0000_profile",
+    "proxy_string": "USER_SHOULD_ADD_THIS",
+    "email": "USER_SHOULD_ADD_THIS",
+    "password": "bya@i4CZ",
+    "company_name": "Reliable Analytics LLC",
+    "company_contact_name": "Noah Wilson",
+    "company_phone": "9057027987",
+    "address_line": null,
+    "city": null,
+    "region": null,
+    "zip": null,
+    "profile_id": null,
+    "domain_name": "www.google.com",
+    "group_id": "0",
+    "ignore_cookie_error": "1",
+    "user_proxy_config": {
+        "proxy_type": "socks5",
+        "proxy_host": "",
+        "proxy_port": "",
+        "proxy_user": "",
+        "proxy_password": "",
+        "proxy_soft": "other"
+    },
+    "fingerprint_config": {
+        "automatic_timezone": "1",
+        "language": [
+            "en-US"
+        ],
+        "flash": "block",
+        "fonts": [
+            "all"
+        ],
+        "webrtc": "disabled",
+        "location": "allow",
+        "location_switch": "1",
+        "screen_resolution": "1920_1080",
+        "canvas": "1",
+        "webgl_image": "1",
+        "webgl": "3",
+        "audio": "1",
+        "hardware_concurrency": "4",
+        "device_memory": "8",
+        "media_devices": "1",
+        "device_name_switch": "1",
+        "random_ua": {
+            "ua_browser": [
+                "chrome"
+            ],
+            "ua_version": [
+                "131"
+            ],
+            "ua_system_version": [
+                "Windows 11"
+            ]
+        },
+        "mac_address_config": {
+            "model": "1",
+            "address": ""
+        },
+        "browser_kernel_config": {
+            "version": "ua_auto",
+            "type": "chrome"
+        },
+        "gpu": "0"
+    }
+}
