@@ -1,0 +1,43 @@
+--------------------------------------
+Step 1: Generate Profile JSON
+--------------------------------------
+1. Run `01generateJson.py`.
+2. Enter a 4-digit number (XXXX) as the profile prefix.
+3. A `profiles/XXXX_profile_START.json` file is created.
+4. Open the json file & fill in (rotation of proxy with link has not been integrated yet):
+   - `proxy_string` (format: `hostname:port:username:password`).
+   - `email` field.
+--------------------------------------
+Step 2: Create Profile in AdsPower
+--------------------------------------
+1. Ensure AdsPower is running.
+2. Run `02createProfile.py` and enter the same XXXX.
+3. This creates a profile in AdsPower with a unique fingerprint and aged cookies.
+4. Verify the profile in AdsPower.
+5. The JSON file updates to `XXXX_profile_CREATED.json`.
+--------------------------------------
+Step 3: Warm Up Profile
+--------------------------------------
+1. Ensure AdsPower is running.
+2. Run `03warmUp.py` and enter XXXX.
+3. The script:
+   - Opens the profile, browses sites, and farms cookies.
+   - Fetches and updates Address, City, Region, and Zip Code based on the proxy.
+   - Runs for ~5 minutes before closing.
+4. The JSON file updates to `XXXX_profile_WARM.json`.
+--------------------------------------
+Step 4: Create a BC with Profile
+--------------------------------------
+1. Ensure AdsPower is running.
+2. Run `04createBC.py` and enter XXXX.
+3. Enter AUTO or MANUAL for BC payment preference.
+4. The script:
+   - Opens the profile and fills in data from the JSON file.
+   - Pauses for 2 minutes for manual CAPTCHA & OTP verification.
+   - Completes all the steps up to adding Contact & Billing Info.
+5. The JSON file updates to:
+   - `XXXX_profile_BC_AUTO.json` or `XXXX_profile_BC_MANUAL.json`.
+NOTE:
+   - **If phone verification is required, script doesn't add any Contact & Billing Info, however BC is created**
+   - JSON file updates to `XXXX_profile_BC_NEEDS_PVA.json`.
+--------------------------------------
